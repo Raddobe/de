@@ -15,7 +15,7 @@
     --popover: 220 13% 10%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 52 100% 50%;
+    --primary: 214 34% 39%;
     --primary-foreground: 220 14% 6%;
 
     --secondary: 220 13% 16%;
@@ -24,7 +24,7 @@
     --muted: 220 10% 14%;
     --muted-foreground: 220 10% 55%;
 
-    --accent: 52 100% 50%;
+    --accent: 214 34% 39%;
     --accent-foreground: 220 14% 6%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,20 +32,20 @@
 
     --border: 220 10% 18%;
     --input: 220 10% 18%;
-    --ring: 52 100% 50%;
+    --ring: 214 34% 39%;
 
     --radius: 0.75rem;
 
-    --glow: 52 100% 50%;
+    --glow: 214 34% 39%;
 
     --sidebar-background: 220 14% 6%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 52 100% 50%;
+    --sidebar-primary: 214 34% 39%;
     --sidebar-primary-foreground: 220 14% 6%;
     --sidebar-accent: 220 13% 16%;
     --sidebar-accent-foreground: 0 0% 95%;
     --sidebar-border: 220 10% 18%;
-    --sidebar-ring: 52 100% 50%;
+    --sidebar-ring: 214 34% 39%;
   }
 }
 
@@ -63,7 +63,7 @@
   }
 
   ::selection {
-    background: hsl(52 100% 50% / 0.3);
+    background: hsl(214 34% 39% / 0.3);
     color: hsl(0 0% 100%);
   }
 
@@ -81,18 +81,18 @@
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: hsl(52 100% 50% / 0.5);
+    background: hsl(214 34% 39% / 0.5);
   }
 }
 
 @layer components {
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(52 100% 50%), hsl(42 100% 60%));
+    background-image: linear-gradient(135deg, hsl(214 34% 39%), hsl(214 40% 52%));
   }
 
   .glow-border {
-    box-shadow: 0 0 20px -5px hsl(52 100% 50% / 0.15);
+    box-shadow: 0 0 20px -5px hsl(214 34% 39% / 0.15);
   }
 
   .glass {
@@ -109,6 +109,6 @@
 
   .hover-lift:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px -10px hsl(52 100% 50% / 0.15);
+    box-shadow: 0 12px 40px -10px hsl(214 34% 39% / 0.15);
   }
 }

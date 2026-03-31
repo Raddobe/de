@@ -7,32 +7,36 @@ const experiences = {
   de: [
     {
       role: "Grafikdesigner & UI/UX Designer",
-      company: "Freiberuflich",
-      period: "2020 – Heute",
-      description: "Gestaltung von Webseiten, mobilen Apps und Markenidentitäten für verschiedene Kunden. Verantwortlich für den gesamten Designprozess von der Konzeption bis zur Umsetzung.",
-      tasks: ["Web Design", "App Design", "Grafikdesign", "Branding"],
+      company: "Zentrum der Stadtverwaltung Isfahan",
+      period: "2020 – 2021",
+      description:
+        "Arbeit an visuellen Kommunikationsprojekten und digitalen Interfaces mit einem starken Fokus auf Klarheit, Funktionalität und Ästhetik. Gestaltung benutzerorientierter Lösungen für digitale Produkte sowie Entwicklung visueller Konzepte im Bereich Grafik- und Interface-Design.",
+      tasks: ["Grafikdesign", "UI/UX Design", "Interface Design", "Visuelle Kommunikation"],
     },
     {
       role: "UI/UX Designer",
-      company: "Designagentur",
-      period: "2018 – 2020",
-      description: "Entwicklung benutzerfreundlicher Interfaces für Web- und Mobile-Anwendungen. Durchführung von User Research und Usability-Tests.",
+      company: "Freie Projekte & Produktkonzepte",
+      period: "2021 – Heute",
+      description:
+        "Konzeption und Gestaltung digitaler Erlebnisse für Web- und Mobile-Produkte – von der ersten Idee bis zum visuellen Interface. Arbeit an User Flows, Wireframes, Prototypen und modernen UI-Systemen mit Fokus auf Nutzerbedürfnisse und konsistente Designqualität.",
       tasks: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
     },
   ],
   en: [
     {
       role: "Graphic Designer & UI/UX Designer",
-      company: "Freelance",
-      period: "2020 – Present",
-      description: "Designing websites, mobile apps, and brand identities for various clients. Responsible for the entire design process from concept to implementation.",
-      tasks: ["Web Design", "App Design", "Graphic Design", "Branding"],
+      company: "Isfahan Municipality Center",
+      period: "2020 – 2021",
+      description:
+        "Working on visual communication projects and digital interfaces with a strong focus on clarity, functionality, and aesthetics. Designing user-centered solutions for digital products and developing visual concepts in graphic and interface design.",
+      tasks: ["Graphic Design", "UI/UX Design", "Interface Design", "Visual Communication"],
     },
     {
       role: "UI/UX Designer",
-      company: "Design Agency",
-      period: "2018 – 2020",
-      description: "Developing user-friendly interfaces for web and mobile applications. Conducting user research and usability testing.",
+      company: "Freelance Projects & Product Concepts",
+      period: "2021 – Present",
+      description:
+        "Conceptualizing and designing digital experiences for web and mobile products—from the first idea to the visual interface. Working on user flows, wireframes, prototypes, and modern UI systems with a focus on user needs and consistent design quality.",
       tasks: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
     },
   ],

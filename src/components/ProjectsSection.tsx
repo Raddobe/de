@@ -9,100 +9,214 @@ const projects = {
     {
       title: "Dg-Product Webshop",
       category: "web",
-      description: "Modernes E-Commerce-Design mit intuitivem Benutzerfluss und klarer Produktpräsentation.",
-      tags: ["UI Design", "E-Commerce", "Figma"],
-    },
-    {
-      title: "Teaching Platform",
-      category: "web",
-      description: "Online-Lernplattform mit übersichtlichem Dashboard und interaktivem Kursdesign.",
-      tags: ["UX Research", "Web Design", "Prototyping"],
+      description:
+        "Modernes E-Commerce-Design mit klarer Produktpräsentation, strukturiertem Seitenaufbau und benutzerfreundlichem Interface.",
+      tags: ["UI Design", "E-Commerce", "Web Design"],
     },
     {
       title: "Mix Panel Dashboard",
       category: "web",
-      description: "Analytics-Dashboard mit Datenvisualisierung und benutzerfreundlicher Navigation.",
-      tags: ["Dashboard", "Data Viz", "UI Design"],
+      description:
+        "Modernes Dashboard-Konzept mit übersichtlicher Informationsarchitektur, klaren UI-Komponenten und intuitiver Benutzerführung.",
+      tags: ["Dashboard", "UI Design", "Data Interface"],
     },
     {
-      title: "NFT Marketplace",
+      title: "NFT Marketplace Concept",
       category: "web",
-      description: "Digitaler Marktplatz für NFTs mit modernem, dunklem Interface-Design.",
+      description:
+        "Dunkles, modernes Interface-Konzept für einen digitalen NFT-Marktplatz mit starkem visuellen Fokus und klarer Content-Struktur.",
       tags: ["Web3", "UI Design", "Dark Mode"],
     },
     {
-      title: "Fitness App",
+      title: "Fitness Website",
       category: "web",
-      description: "Fitness-Website mit motivierendem Design und übersichtlicher Kursstruktur.",
-      tags: ["Responsive", "UI Design", "Branding"],
+      description:
+        "Dynamisches Webdesign für eine Sport- und Fitnessplattform mit motivierender visueller Sprache und übersichtlicher Inhaltsstruktur.",
+      tags: ["Responsive Design", "UI Design", "Branding"],
     },
     {
-      title: "TopHero App",
+      title: "Digital Product Presentation",
+      category: "web",
+      description:
+        "Visuelles Konzept zur Präsentation digitaler Produkte, Interfaces und Systemansichten mit Fokus auf Klarheit und Designkonsistenz.",
+      tags: ["Product Design", "UI System", "Presentation"],
+    },
+    {
+      title: "Iran Home Platform",
+      category: "web",
+      description:
+        "Sauberes und modernes Website-Konzept für eine informationsorientierte Plattform mit strukturierter Navigation und ruhigem Layout.",
+      tags: ["Web Design", "Interface Design", "UX Structure"],
+    },
+    {
+      title: "Food Delivery App",
       category: "app",
-      description: "Mobile App mit spielerischem Interface und engagierendem Onboarding-Prozess.",
-      tags: ["Mobile UI", "App Design", "Gamification"],
+      description:
+        "Mobiles App-Konzept für Essensbestellung mit klarer Produktdarstellung, benutzerfreundlicher Navigation und modernem Interface.",
+      tags: ["Mobile UI", "App Design", "Food Tech"],
     },
     {
-      title: "EventTrue App",
+      title: "cramp App",
       category: "app",
-      description: "Event-Management-App mit elegantem Design und reibungslosem Buchungsablauf.",
-      tags: ["Mobile UX", "App Design", "Booking"],
+      description:
+        "UI-Konzept für eine mobile Anwendung mit klarem Informationsaufbau, modernen Interface-Komponenten und nutzerorientierter Struktur.",
+      tags: ["Mobile UX", "App Design", "UI System"],
     },
     {
-      title: "Markenidentitäten",
+      title: "Headline App",
+      category: "app",
+      description:
+        "Modernes Mobile-App-Design mit ruhiger visueller Sprache, klarer Benutzerführung und zeitgemäßem Interface-Stil.",
+      tags: ["Mobile UI", "App Design", "Interface Design"],
+    },
+    {
+      title: "Produktwerbung & Social Media Visual",
       category: "graphic",
-      description: "Verschiedene Branding-Projekte mit Logo-Design und visueller Identität.",
-      tags: ["Branding", "Logo", "Print"],
+      description:
+        "Gestaltung eines werblichen Key Visuals für ein Produkt mit Fokus auf visuelle Hierarchie, Produktpräsentation und markenorientierte Farbgestaltung.",
+      tags: ["Advertising", "Product Design", "Visual Design"],
+    },
+    {
+      title: "Packaging Design",
+      category: "graphic",
+      description:
+        "Verpackungskonzept mit klarer Markenwirkung, illustrativer Gestaltung und produktbezogener visueller Identität.",
+      tags: ["Packaging", "Branding", "Print Design"],
+    },
+    {
+      title: "Broschüren- und Faltblattdesign",
+      category: "graphic",
+      description:
+        "Gestaltung eines mehrseitigen Printlayouts mit strukturierter Informationsaufbereitung und präziser typografischer Anordnung.",
+      tags: ["Print Design", "Layout", "Typography"],
+    },
+    {
+      title: "Posterdesign-Serie",
+      category: "graphic",
+      description:
+        "Entwicklung visueller Poster mit starkem Fokus auf grafische Komposition, Farbwirkung und wirkungsvolle Kommunikation.",
+      tags: ["Poster Design", "Print", "Visual Communication"],
+    },
+    {
+      title: "Editorial & Artistic Layout",
+      category: "graphic",
+      description:
+        "Kreatives Layoutprojekt mit experimenteller Bildsprache, gestalterischer Komposition und editoriellem Charakter.",
+      tags: ["Editorial", "Layout Design", "Art Direction"],
+    },
+    {
+      title: "Cover- und Publikationsdesign",
+      category: "graphic",
+      description:
+        "Gestaltung eines modernen Covers mit sauberem Layout, illustrativen Elementen und professioneller Druckästhetik.",
+      tags: ["Cover Design", "Publication", "Print Media"],
     },
   ],
   en: [
     {
       title: "Dg-Product Webshop",
       category: "web",
-      description: "Modern e-commerce design with intuitive user flow and clear product presentation.",
-      tags: ["UI Design", "E-Commerce", "Figma"],
-    },
-    {
-      title: "Teaching Platform",
-      category: "web",
-      description: "Online learning platform with clean dashboard and interactive course design.",
-      tags: ["UX Research", "Web Design", "Prototyping"],
+      description:
+        "Modern e-commerce design with clear product presentation, structured layout, and user-friendly interface.",
+      tags: ["UI Design", "E-Commerce", "Web Design"],
     },
     {
       title: "Mix Panel Dashboard",
       category: "web",
-      description: "Analytics dashboard with data visualization and user-friendly navigation.",
-      tags: ["Dashboard", "Data Viz", "UI Design"],
+      description:
+        "Modern dashboard concept with clean information architecture, clear UI components, and intuitive navigation.",
+      tags: ["Dashboard", "UI Design", "Data Interface"],
     },
     {
-      title: "NFT Marketplace",
+      title: "NFT Marketplace Concept",
       category: "web",
-      description: "Digital marketplace for NFTs with modern, dark interface design.",
+      description:
+        "Dark, modern interface concept for a digital NFT marketplace with strong visual focus and clear content structure.",
       tags: ["Web3", "UI Design", "Dark Mode"],
     },
     {
       title: "Fitness Website",
       category: "web",
-      description: "Fitness website with motivational design and organized course structure.",
-      tags: ["Responsive", "UI Design", "Branding"],
+      description:
+        "Dynamic web design for a sports and fitness platform with motivating visuals and a clear content structure.",
+      tags: ["Responsive Design", "UI Design", "Branding"],
     },
     {
-      title: "TopHero App",
+      title: "Digital Product Presentation",
+      category: "web",
+      description:
+        "Visual concept for presenting digital products, interfaces, and system views with a focus on clarity and design consistency.",
+      tags: ["Product Design", "UI System", "Presentation"],
+    },
+    {
+      title: "Iran Home Platform",
+      category: "web",
+      description:
+        "Clean, modern website concept for an information-focused platform with structured navigation and a calm layout.",
+      tags: ["Web Design", "Interface Design", "UX Structure"],
+    },
+    {
+      title: "Food Delivery App",
       category: "app",
-      description: "Mobile app with playful interface and engaging onboarding process.",
-      tags: ["Mobile UI", "App Design", "Gamification"],
+      description:
+        "Mobile app concept for food ordering with clear product presentation, user-friendly navigation, and a modern interface.",
+      tags: ["Mobile UI", "App Design", "Food Tech"],
     },
     {
-      title: "EventTrue App",
+      title: "cramp App",
       category: "app",
-      description: "Event management app with elegant design and seamless booking flow.",
-      tags: ["Mobile UX", "App Design", "Booking"],
+      description:
+        "UI concept for a mobile application with clear information structure, modern interface components, and a user-centered layout.",
+      tags: ["Mobile UX", "App Design", "UI System"],
     },
     {
-      title: "Brand Identities",
+      title: "Headline App",
+      category: "app",
+      description:
+        "Modern mobile app design with a calm visual tone, clear user guidance, and a contemporary interface style.",
+      tags: ["Mobile UI", "App Design", "Interface Design"],
+    },
+    {
+      title: "Product Advertising & Social Media Visual",
       category: "graphic",
-      description: "Various branding projects including logo design and visual identity.",
-      tags: ["Branding", "Logo", "Print"],
+      description:
+        "Designing a promotional key visual focused on visual hierarchy, product presentation, and brand-oriented color styling.",
+      tags: ["Advertising", "Product Design", "Visual Design"],
+    },
+    {
+      title: "Packaging Design",
+      category: "graphic",
+      description:
+        "Packaging concept with strong brand impact, illustrative design, and product-centered visual identity.",
+      tags: ["Packaging", "Branding", "Print Design"],
+    },
+    {
+      title: "Brochure & Foldout Design",
+      category: "graphic",
+      description:
+        "Multi-page print layout with structured information hierarchy and precise typographic arrangement.",
+      tags: ["Print Design", "Layout", "Typography"],
+    },
+    {
+      title: "Poster Series",
+      category: "graphic",
+      description:
+        "Visual poster development with strong focus on graphic composition, color impact, and effective communication.",
+      tags: ["Poster Design", "Print", "Visual Communication"],
+    },
+    {
+      title: "Editorial & Artistic Layout",
+      category: "graphic",
+      description:
+        "Creative layout project with experimental imagery, design composition, and an editorial character.",
+      tags: ["Editorial", "Layout Design", "Art Direction"],
+    },
+    {
+      title: "Cover & Publication Design",
+      category: "graphic",
+      description:
+        "Modern cover design with clean layout, illustrative elements, and professional print aesthetics.",
+      tags: ["Cover Design", "Publication", "Print Media"],
     },
   ],
 };

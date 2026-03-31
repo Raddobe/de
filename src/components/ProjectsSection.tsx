@@ -329,12 +329,13 @@ export default function ProjectsSection() {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       loading="lazy"
                     />
                   ) : (
                     <Icon size={40} className="text-primary/40 group-hover:text-primary/70 transition-colors" />
                   )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/10 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
                   <div className="absolute top-3 right-3">
                     <span className="px-2 py-1 text-[10px] rounded-full bg-primary/10 text-primary font-bold uppercase tracking-wider">
                       {filterLabels[project.category]}

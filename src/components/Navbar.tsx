@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/hooks/useLanguage";
-import { Menu, X } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Menu, X, Sun, Moon } from "lucide-react";
 
 const navItems = ["about", "skills", "experience", "education", "projects", "contact"];
 
 export default function Navbar() {
   const { lang, setLang, t } = useLanguage();
+  const { theme, resolvedTheme, setTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -16,10 +19,17 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setMobileOpen(false);
   };
+
+  const isDark = (resolvedTheme ?? theme) === "dark";
+  const toggleTheme = () => setTheme(isDark ? "light" : "dark");
 
   return (
     <motion.nav
@@ -48,6 +58,17 @@ export default function Navbar() {
               {t(`nav.${item}`)}
             </button>
           ))}
+
+          <button
+            onClick={toggleTheme}
+            className="flex items-center justify-center w-9 h-9 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors"
+            aria-label="Toggle theme"
+          >
+            <span className="sr-only">Toggle theme</span>
+            <span className="w-4 h-4 flex items-center justify-center">
+              {mounted ? (isDark ? <Sun size={16} /> : <Moon size={16} />) : null}
+            </span>
+          </button>
 
           {/* Language Switcher */}
           <div className="flex items-center gap-1 ml-4 rounded-full border border-border p-1">
@@ -111,6 +132,16 @@ export default function Navbar() {
                   }`}
                 >
                   EN
+                </button>
+                <button
+                  onClick={toggleTheme}
+                  className="px-3 py-1 rounded-full text-xs font-bold border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors"
+                  aria-label="Toggle theme"
+                >
+                  <span className="inline-flex items-center gap-1">
+                    {mounted ? (isDark ? <Sun size={14} /> : <Moon size={14} />) : null}
+                    {isDark ? "Light" : "Dark"}
+                  </span>
                 </button>
               </div>
             </div>

@@ -321,7 +321,7 @@ export default function ProjectsSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className="glass rounded-xl overflow-hidden hover-lift group"
+                className="glass bg-card/80 dark:bg-card/60 rounded-xl overflow-hidden hover-lift group shadow-sm"
               >
                 {/* Image header area */}
                 <div className="h-40 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center relative overflow-hidden">
@@ -345,10 +345,15 @@ export default function ProjectsSection() {
 
                 <div className="p-5">
                   <h3 className="font-heading font-semibold text-foreground mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
+                  <p className="text-foreground/70 dark:text-muted-foreground text-sm leading-relaxed mb-4">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-1.5">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="px-2 py-0.5 text-[11px] rounded-full bg-secondary text-secondary-foreground">
+                      <span
+                        key={tag}
+                        className="px-2 py-0.5 text-[11px] rounded-full bg-secondary/70 text-secondary-foreground"
+                      >
                         {tag}
                       </span>
                     ))}

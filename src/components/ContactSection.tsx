@@ -8,17 +8,43 @@ import { toast } from "sonner";
 export default function ContactSection() {
   const { t } = useLanguage();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success(t("contact.title") + " ✓");
-    setForm({ name: "", email: "", message: "" });
+    setSubmitting(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "2f7787bf-f124-4c22-949a-a0fd7d844948",
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error("Request failed");
+      }
+
+      toast.success(t("contact.title") + " ✓");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      toast.error("Message failed. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const contactInfo = [
     { icon: Phone, label: t("contact.phone"), value: "+49 152 3784 7955" },
     { icon: MapPin, label: t("contact.location"), value: "Hannover, Deutschland" },
-    { icon: Mail, label: t("contact.email"), value: "radmehr.akbari@email.de" },
+    { icon: Mail, label: t("contact.email"), value: "akbari.radmehr@gmail.com" },
   ];
 
   return (
@@ -82,10 +108,11 @@ export default function ContactSection() {
           />
           <button
             type="submit"
-            className="px-8 py-3 bg-primary text-primary-foreground font-heading font-semibold rounded-full hover-lift flex items-center gap-2"
+            disabled={submitting}
+            className="px-8 py-3 bg-primary text-primary-foreground font-heading font-semibold rounded-full hover-lift flex items-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
           >
             <Send size={16} />
-            {t("contact.send")}
+            {submitting ? "Sending..." : t("contact.send")}
           </button>
         </motion.form>
       </div>

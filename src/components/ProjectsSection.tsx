@@ -335,7 +335,7 @@ export default function ProjectsSection() {
                   ) : (
                     <Icon size={40} className="text-primary/40 group-hover:text-primary/70 transition-colors" />
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/10 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-transparent" />
                   <div className="absolute top-3 right-3">
                     <span className="px-2 py-1 text-[10px] rounded-full bg-primary/10 text-primary font-bold uppercase tracking-wider">
                       {filterLabels[project.category]}

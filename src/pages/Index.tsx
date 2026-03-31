@@ -12,8 +12,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   const { scrollYProgress } = useScroll();
-  const grow = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
-  const fade = useTransform(scrollYProgress, [0, 0.2, 1], [0.04, 0.1, 0.16]);
+  const grow = useTransform(scrollYProgress, [0, 1], [0.25, 1]);
+  const fade = useTransform(scrollYProgress, [0, 0.2, 1], [0.08, 0.16, 0.28]);
 
   return (
     <LanguageProvider>
@@ -27,8 +27,8 @@ const Index = () => {
         >
           <motion.path
             d="M600 0 C 800 120 400 260 600 380 C 820 520 380 700 600 860 C 840 1040 360 1260 600 1480 C 860 1720 340 1980 600 2200"
-            stroke="hsl(var(--primary) / 0.22)"
-            strokeWidth="2"
+            stroke="hsl(var(--primary) / 0.35)"
+            strokeWidth="3"
             strokeLinecap="round"
           />
         </motion.svg>

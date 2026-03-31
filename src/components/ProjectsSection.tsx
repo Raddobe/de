@@ -321,7 +321,7 @@ export default function ProjectsSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className="glass bg-card/80 dark:bg-card/60 rounded-xl overflow-hidden hover-lift group shadow-sm"
+                className="glass bg-card/80 dark:bg-card/60 rounded-xl overflow-hidden group shadow-sm transition-transform duration-300 hover:-translate-y-1"
               >
                 {/* Image header area */}
                 <div className="h-40 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center relative overflow-hidden">
